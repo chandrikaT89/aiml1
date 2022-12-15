@@ -1,0 +1,24 @@
+import numpy as np
+my_list=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+def get_mean(my_data):
+    return sum(my_data)/(len(my_data)*1.0)
+
+get_mean(my_list)
+
+my_np_list=np.asarray(my_list)
+np.mean(my_np_list)
+
+my_list.append(100)
+get_mean(my_list)
+
+np.median(my_list)
+
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+df=pd.read_csv("C:/Users/admin/Downloads/archive (7).zip")
+print(df)
+
+df.info()
+
